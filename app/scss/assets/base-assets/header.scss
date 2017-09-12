@@ -1,0 +1,33 @@
+@import '../settings';
+
+/*header*/
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.header {
+    &-block {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-top {
+        color: #fff;
+        background-color: color('headerTop');
+        a {
+            color: #fff;
+        }
+    }
+    &-bottom {
+        padding: 26px 0;
+        background-color: #fff;
+    }
+}
+
+/*END:header*/

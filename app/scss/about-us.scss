@@ -1,0 +1,75 @@
+@import 'assets/settings';
+
+.section-about {
+    padding-top: 0;
+    padding-bottom: 50px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJhNmJhZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NGE2ZTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(42,107,174,1) 0%, rgba(100,166,233,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(42,107,174,1) 0%,rgba(100,166,233,1) 100%);
+    background: linear-gradient(to bottom, rgba(42,107,174,1) 0%,rgba(100,166,233,1) 100%);
+    background-color: color('about');
+
+    filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#2a6bae\', endColorstr=\'#64a6e9\',GradientType=0 )';
+    &__inner {
+        position: relative;
+        top: -40px;
+        padding-top: 30px;
+        border-bottom: 1px dashed #ebebeb;
+        background-color: #fff;
+        &::before {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 100%;
+            height: 100%;
+            content: '';
+            pointer-events: none;
+            border: 1px dashed #fff;
+        }
+    }
+    &__content {
+        margin-bottom: 5px;
+        padding: 30px 30px 45px 30px;
+        border-bottom: 1px dashed #ebebeb;
+    }
+    &__main {
+        &-title {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.features-list {
+    display: flex;
+    margin-bottom: 0;
+    list-style: none;
+
+    flex-wrap: wrap;
+    &__item {
+        width: 25%;
+        padding: 0 10px;
+        text-align: center;
+    }
+    &__img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+    }
+    &__title {
+        display: flex;
+        overflow: hidden;
+        height: 65px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: color('primaryText');
+
+        align-items: center;
+        justify-content: center;
+    }
+    &__description {
+        color: color('primaryDescription');
+    }
+}

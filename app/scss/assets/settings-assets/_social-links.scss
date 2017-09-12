@@ -1,0 +1,13 @@
+$socialLinks: (
+    'vk',
+    'twitter',
+    'facebook'
+);
+
+// @each $socialLink in $socialLinks {
+// 	.list-item.#{$socialLink} {
+// 		.list-link {
+// 			background-image: url(../img/#{$socialLink}.svg);
+// 		}	
+// 	}
+// }

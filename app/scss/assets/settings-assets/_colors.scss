@@ -1,0 +1,25 @@
+$colors: ( 
+    'primary': #fff,
+    'primaryText': #223643,
+    'primaryDescription': #7a8f9d,
+    'headerTop': #102636,
+    'defaultBorder': #a9a9a9,
+    'ctaBtn': #f05a4d,
+    'mainNavText': #2e485a,
+    'popupDescription': #81929e,
+    'mainNavTextHover': #3379aa,
+    'footerText': #7c97af,
+    'formControlBg': #e4eaf0,
+    'formControlText': #738191,
+    'formSubmitBtn': #5295d9,
+    'formSubmitBtnHover': #65a7e9,
+    'introDescription': #F3B82C,
+    'catalogFilters': #eef3f7,
+    'topBtn': #4b6a7f,
+    'about': #2a6bae,
+    'advantages': #242E39,
+);
+
+@function color($color) {
+    @return map-get($colors, $color);
+}

@@ -1,0 +1,34 @@
+@import '../settings';
+
+/*footer*/
+.site-footer {
+    padding: 15px 0;
+    color: color('footerText');
+    background-color: color('headerTop');
+}
+
+.copyright {
+    margin-right: 10px;
+}
+
+.footer {
+    &-block {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-info {
+        display: inline-flex;
+
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-contacts {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+/*END:footer*/

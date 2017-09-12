@@ -1,0 +1,40 @@
+@import '../settings';
+
+.popup {
+    display: none;
+    overflow: auto;
+
+    @extend %overlay;
+    &-inner {
+        position: absolute;
+        top: 2000px;
+        left: 50%;
+        z-index: 999;
+        width: 500px;
+        height: 321px;
+        margin-left: -250px;
+        margin-top: -156px;
+        padding: 30px;
+        background-color: #fff;
+    }
+    &-title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+        margin-bottom: 0;
+        color: color('headerTop');
+    }
+    &-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: color('popupDescription');
+    }
+    &-close {
+        position: absolute;
+        top: -30px;
+        right: 0px;
+        color: #fff;
+        border: none;
+        background: none;
+    }
+}

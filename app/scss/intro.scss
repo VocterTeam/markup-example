@@ -1,0 +1,86 @@
+@import 'assets/settings';
+
+.twentytwenty-before-label,
+.twentytwenty-after-label {
+    display: none;
+}
+
+.intro {
+    position: relative;
+    padding-top: 120px;
+    > .myContainer {
+        position: static;
+    }
+    .wow {
+        visibility: hidden;
+        &.active {
+            visibility: visible;
+        }
+    }
+    &-content {
+        position: absolute;
+        top: 42%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #fff;
+    }
+    &-title {
+        display: block;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        pointer-events: none;
+        background-color: color('primaryText');
+    }
+    &-description {
+        position: relative;
+        display: inline-block;
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 7px 30px;
+        pointer-events: none;
+        background-color: color('introDescription');
+        &::before,
+        &::after {
+            position: absolute;
+            z-index: 1;
+            width: 14px;
+            height: 14px;
+            content: '';
+            background-image: url(../img/svg/quotes.svg);
+            background-repeat: no-repeat;
+            background-size: 14px;
+        }
+        &::before {
+            top: 10px;
+            left: 8px;
+        }
+        &::after {
+            right: 10px;
+            bottom: 8px;
+            transform: rotate(180deg);
+        }
+    }
+    &-slider {
+        &__item {
+            position: relative;
+        }
+        &-list {
+            &__item {
+                .myContainer {
+                    position: static;
+                }
+            }
+        }
+    }
+}
+
+.compare-slider {
+    // height: calc(100vh + 40px) !important;
+    &__img {
+        width: 100%;
+    }
+}

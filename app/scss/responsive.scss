@@ -1,0 +1,362 @@
+@import 'assets/settings';
+
+@media screen and (max-width: 1150px) {
+    .features-list {
+        &__item {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    .advantages-list {
+        &__item {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .intro {
+        padding-top: 15%;
+        &-slider {
+            padding-top: 100px;
+        }
+        &-title {
+            font-size: 18px;
+        }
+        &-description {
+            font-size: 14px;
+        }
+    }
+    .toggle-btn {
+        display: inline-block;
+    }
+    .main-nav {
+        position: absolute;
+        top: calc(100% + 26px);
+        left: 0;
+        display: none;
+        width: 100%;
+        background-color: #102636;
+        &-list {
+            li {
+                display: block;
+                width: 100%;
+                text-align: center;
+                a {
+                    display: block;
+                    width: 100%;
+                    padding: 8px 10px;
+                    color: #fff;
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                        background-color: #244359;
+                    }
+                }
+            }
+        }
+        &.active {
+            display: block;
+        }
+    }
+    .catalog-gallery {
+        margin-right: 0;
+        margin-left: 0;
+        &__item {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    .section {
+        &-about {
+            &__inner {
+                top: 0;
+            }
+        }
+    }
+    .slick {
+        &-dots {
+            bottom: 30px;
+        }
+    }
+    .comments-list {
+        li.comment {
+            width: calc(33.33% - 30px);
+        }
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .site-header {
+        .contacts-list {
+            &__item {
+                &:last-of-type {
+                    display: none;
+                }
+            }
+        }
+    }
+    .site-footer {
+        .contacts-list {
+            &__item {
+                margin-right: 0;
+                &:last-of-type {
+                    display: none;
+                }
+            }
+        }
+    }
+    .comments-list {
+        li.comment {
+            width: calc(50% - 30px);
+        }
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .site-header {
+        .contacts-list {
+            &__item {
+                margin-right: 0;
+                &:nth-last-of-type(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .intro {
+        &-content {
+            top: 70%;
+        }
+        &-slider {
+            .intro-content {
+                top: 42%;
+            }
+        }
+    }
+    .cta-btn {
+        &--intro {
+            min-width: 100px;
+            font-size: 12px;
+        }
+    }
+    .comment-respond {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .advantages-list {
+        &__item {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 50px;
+            margin-left: 0;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .features-list {
+        &__item {
+            display: block;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 40px;
+            margin-left: 0;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        &__title {
+            height: inherit;
+        }
+    }
+    .footer {
+        &-info,
+        &-contacts,
+        &-block {
+            display: block;
+        }
+        &-contacts,
+        &-info {
+            text-align: center;
+        }
+    }
+    .site-footer {
+        .contacts-list {
+            display: none;
+        }
+    }
+    .copyright {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .section {
+        &-title {
+            font-size: 23px;
+        }
+    }
+    .cta-btn {
+        font-size: 11px;
+        &--lg {
+            font-size: 14px;
+            padding: 18px;
+        }
+    }
+    .top-btn {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    .popup {
+        overflow: auto;
+        &-inner {
+            width: 300px;
+            margin-left: -150px;
+        }
+        &-title {
+            font-size: 16px;
+        }
+        &-description {
+            font-size: 12px;
+        }
+    }
+    .intro {
+        &-content {
+            display: none;
+        }
+    }
+    .slick {
+        &-dots {
+            bottom: 20px;
+            li {
+                button {
+                    width: 9px;
+                    height: 9px;
+                }
+            }
+        }
+    }
+    .comments-list {
+        li.comment {
+            width: 100%;
+        }
+    }
+    .g-recaptcha {
+        transform: scale(0.8);
+        transform-origin: 0 0;
+    }
+    .catalog-filters {
+        &-model {
+            &__link {
+                margin-bottom: 10px;
+            }
+            &__img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .catalog-gallery {
+        &-cover {
+            &__title {
+                font-size: 19px;
+            }
+        }
+    }
+    .wpcf7-form {
+        .wpcf7-submit {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cta-btn {
+        &--lg {
+            font-size: 12px;
+        }
+    }
+    .advantages-list {
+        &__item {
+            display: block;
+            text-align: center;
+        }
+    }
+    .intro {
+        &-slider {
+            padding-top: 110px;
+        }
+        &-description {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) and (max-height: 340px) {
+    .popup-inner {
+        margin-top: -82px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .contacts-list {
+        a[href^='tel'],
+        &__link {
+            font-size: 10px;
+        }
+        &__icon {
+            display: none;
+        }
+    }
+    .section {
+        &-title {
+            font-size: 20px;
+        }
+    }
+    .features-list {
+        &__title {
+            font-size: 15px;
+        }
+    }
+    .cta-btn {
+        font-size: 9px;
+    }
+    .about {
+        &-content {
+            font-size: 14px;
+        }
+    }
+    .wpcf7-form {
+        .wpcf7-form-control.wpcf7-text {
+            font-size: 14px;
+        }
+        .wpcf7-submit {
+            width: 100%;
+            font-size: 13px;
+        }
+    }
+    .popup {
+        &-title {
+            font-size: 14px;
+        }
+        &-description {
+            font-size: 13px;
+        }
+    }
+    .intro {
+        padding-top: 118px;
+    }
+    .catalog-gallery {
+        &-cover {
+            &__title {
+                font-size: 16px;
+            }
+        }
+    }
+}

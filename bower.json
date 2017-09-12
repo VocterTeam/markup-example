@@ -1,0 +1,13 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "wow": "^1.1.2",
+    "jquery": "^3.2.1",
+    "animate.css": "animate-css#^3.5.2",
+    "twentytwenty": "*",
+    "slick-carousel": "^1.7.1",
+    "jquery.maskedinput": "^1.4.1",
+    "isotope": "2.2.1"
+  }
+}
